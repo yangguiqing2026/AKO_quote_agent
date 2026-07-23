@@ -1,0 +1,37 @@
+{
+  "token": "ako2024",
+  "server": {
+    "host": "127.0.0.1",
+    "port": 5000,
+    "debug": false
+  },
+  "paths": {
+    "data_dir": "./data",
+    "pdf_dir": "./pdfs",
+    "log_dir": "./logs"
+  },
+  "fonts": {
+    "windows": "C:/Windows/Fonts/msyh.ttc",
+    "linux": "/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc",
+    "fallback": "reportlab.pdfbase.ttfonts.TTFont"
+  },
+  "queue": {
+    "processing_timeout": 300,
+    "max_retry": 3,
+    "poll_interval": 10,
+    "heartbeat_interval": 30
+  },
+  "pdf": {
+    "max_file_size_mb": 5,
+    "naming_format": "AK-{task_id}.pdf"
+  },
+  "log": {
+    "max_bytes": 5242880,
+    "backup_count": 3,
+    "level": "INFO"
+  },
+  "network": {
+    "base_url": "https://akobuild.cloud",
+    "enabled": false
+  }
+}

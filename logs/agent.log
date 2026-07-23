@@ -1,0 +1,6 @@
+2026-07-15 09:43:50 | INFO     | ako_quote | 使用内置定价常量（未检测到 pricing_config.json）
+2026-07-15 09:43:58 | INFO     | ako_quote | 使用内置定价常量（未检测到 pricing_config.json）
+2026-07-15 09:43:58 | INFO     | ako_quote | 报价计算完成: 项目=测试, 面积=100.0㎡, 钢材用量=14.0kg/㎡, 钢材成本=5600.00元, 总计=42401.80元
+2026-07-15 09:44:15 | INFO     | ako_quote | 使用内置定价常量（未检测到 pricing_config.json）
+2026-07-15 09:44:15 | INFO     | ako_quote | 报价计算完成: 项目=钢构测试, 面积=200.0㎡, 钢材用量=18.0kg/㎡, 钢材成本=14400.00元, 总计=87841.60元
+2026-07-15 09:55:16 | INFO     | ako_quote | 已加载外部定价配置: d:\AKO_quote_agent\ako_quote_agent\pricing_config.json

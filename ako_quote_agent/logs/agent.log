@@ -1,0 +1,41 @@
+2026-07-12 09:08:59 | INFO     | test | Logger 测试通过
+2026-07-12 09:08:59 | INFO     | ako_storage | 目录初始化完成: ./data, ./pdfs\2026, ./logs
+2026-07-12 09:08:59 | INFO     | ako_queue | 新任务入队: 8b8a6875
+2026-07-12 09:08:59 | INFO     | ako_quote | 使用内置定价常量（未检测到 pricing_config.json）
+2026-07-12 09:09:14 | INFO     | test | Logger 测试通过
+2026-07-12 09:09:14 | INFO     | ako_storage | 目录初始化完成: ./data, ./pdfs\2026, ./logs
+2026-07-12 09:09:14 | INFO     | ako_queue | 新任务入队: 10d73285
+2026-07-12 09:09:14 | INFO     | ako_quote | 使用内置定价常量（未检测到 pricing_config.json）
+2026-07-12 09:09:14 | INFO     | ako_quote | 报价计算完成: 项目=test, 总计=47905.50元
+2026-07-12 09:09:14 | INFO     | ako_pdf | 中文字体已注册: C:/Windows/Fonts/msyh.ttc
+2026-07-12 09:09:14 | INFO     | ako_pdf | PDF 已生成: ./pdfs\AK-10d73285.pdf (0.05MB)
+2026-07-12 09:09:14 | WARNING  | ako_queue | 任务 10d73285 -> failed (retry 1/3)
+2026-07-12 09:09:14 | WARNING  | ako_queue | 任务 10d73285 -> failed (retry 2/3)
+2026-07-12 09:09:14 | WARNING  | ako_queue | 任务 10d73285 重试超限 -> dead
+2026-07-12 09:09:33 | INFO     | ako_server | AKO 本地 Flask 服务启动中...
+2026-07-12 09:17:26 | INFO     | ako_queue | 新任务入队: 0b8a3921
+2026-07-12 09:17:26 | INFO     | ako_server | 任务已提交: 0b8a3921
+2026-07-15 09:33:15 | INFO     | ako_quote | 使用内置定价常量（未检测到 pricing_config.json）
+2026-07-15 09:33:15 | INFO     | ako_storage | 目录初始化完成: ./data, ./pdfs\2026, ./logs
+2026-07-15 09:33:15 | INFO     | ako_agent | ==================================================
+2026-07-15 09:33:15 | INFO     | ako_agent | AKO-Quote-Agent v1.0 启动
+2026-07-15 09:33:15 | INFO     | ako_agent | ==================================================
+2026-07-15 09:33:15 | INFO     | ako_agent | AKO Agent 启动 (ID: ecbc0b64)，轮询间隔 10s
+2026-07-15 09:53:03 | INFO     | ako_quote | 使用内置定价常量（未检测到 pricing_config.json）
+2026-07-15 09:53:03 | INFO     | ako_storage | 目录初始化完成: ./data, ./pdfs\2026, ./logs
+2026-07-15 09:53:03 | INFO     | ako_agent | ==================================================
+2026-07-15 09:53:03 | INFO     | ako_agent | AKO-Quote-Agent v1.0 启动
+2026-07-15 09:53:03 | INFO     | ako_agent | ==================================================
+2026-07-15 09:53:03 | INFO     | ako_agent | AKO Agent 启动 (ID: 9087ee27)，轮询间隔 10s
+2026-07-15 09:53:43 | INFO     | ako_quote | 使用内置定价常量（未检测到 pricing_config.json）
+2026-07-15 09:53:43 | INFO     | ako_storage | 目录初始化完成: ./data, ./pdfs\2026, ./logs
+2026-07-15 09:53:43 | INFO     | ako_agent | ==================================================
+2026-07-15 09:53:43 | INFO     | ako_agent | AKO-Quote-Agent v1.0 启动
+2026-07-15 09:53:43 | INFO     | ako_agent | ==================================================
+2026-07-15 09:53:43 | INFO     | ako_agent | AKO Agent 启动 (ID: 1f47116b)，轮询间隔 10s
+2026-07-15 10:36:34 | INFO     | ako_quote | 已加载外部定价配置: D:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-15 10:36:35 | INFO     | ako_storage | 目录初始化完成: ./data, ./pdfs\2026, ./logs
+2026-07-15 10:36:35 | INFO     | ako_agent | ==================================================
+2026-07-15 10:36:35 | INFO     | ako_agent | AKO-Quote-Agent v1.0 启动
+2026-07-15 10:36:35 | INFO     | ako_agent | ==================================================
+2026-07-15 10:36:35 | INFO     | ako_agent | AKO Agent 启动 (ID: 519c04b5)，轮询间隔 10s
