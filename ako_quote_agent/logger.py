@@ -8,15 +8,21 @@ import os
 import json
 from logging.handlers import RotatingFileHandler
 
-# 加载配置
+# 加载配置（PyInstaller-safe：config.json 不在临时目录则用内置默认值）
 _CONFIG_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json")
-with open(_CONFIG_PATH, "r", encoding="utf-8") as f:
-    _config = json.load(f)
+_config = {}
+if os.path.exists(_CONFIG_PATH):
+    try:
+        with open(_CONFIG_PATH, "r", encoding="utf-8") as f:
+            _config = json.load(f)
+    except Exception:
+        pass
 
-LOG_DIR = _config["paths"]["log_dir"]
-MAX_BYTES = _config["log"]["max_bytes"]        # 5MB
-BACKUP_COUNT = _config["log"]["backup_count"]   # 3
-LOG_LEVEL = getattr(logging, _config["log"]["level"].upper(), logging.INFO)
+# 默认值（打包后 config.json 可能不可用）
+LOG_DIR = _config.get("paths", {}).get("log_dir", os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs"))
+MAX_BYTES = _config.get("log", {}).get("max_bytes", 5 * 1024 * 1024)
+BACKUP_COUNT = _config.get("log", {}).get("backup_count", 3)
+LOG_LEVEL = getattr(logging, _config.get("log", {}).get("level", "INFO").upper(), logging.INFO)
 
 # 确保日志目录存在
 os.makedirs(LOG_DIR, exist_ok=True)

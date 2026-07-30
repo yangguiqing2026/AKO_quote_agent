@@ -4,3 +4,30 @@
 2026-07-15 09:44:15 | INFO     | ako_quote | 使用内置定价常量（未检测到 pricing_config.json）
 2026-07-15 09:44:15 | INFO     | ako_quote | 报价计算完成: 项目=钢构测试, 面积=200.0㎡, 钢材用量=18.0kg/㎡, 钢材成本=14400.00元, 总计=87841.60元
 2026-07-15 09:55:16 | INFO     | ako_quote | 已加载外部定价配置: d:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-26 13:44:45 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:09:44 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:09:44 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:12:15 | INFO     | ako_quote | 已加载外部定价配置: e:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:12:15 | INFO     | ako_quote | 已加载外部定价配置: e:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:12:48 | INFO     | ako_quote | 已加载外部定价配置: e:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:12:48 | INFO     | ako_quote | 已加载外部定价配置: e:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:14:44 | INFO     | ako_quote | 已加载外部定价配置: e:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:14:44 | INFO     | ako_quote | 已加载外部定价配置: e:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:17:13 | INFO     | ako_quote | 报价计算完成: 项目=花溪办公楼, 面积=107.0㎡, 钢材用量=14.0kg/㎡, 钢材成本=5992.00元, 总计=45379.22元
+2026-07-27 00:20:13 | INFO     | ako_quote | 报价计算完成: 项目=花溪办公楼, 面积=256.0㎡, 钢材用量=14.0kg/㎡, 钢材成本=14336.00元, 总计=107172.21元
+2026-07-27 00:23:44 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:23:44 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:30:15 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:30:15 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:35:04 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:35:04 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:43:58 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:43:58 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:48:41 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:48:41 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:50:36 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 00:50:36 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 01:01:05 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 01:01:05 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 01:04:34 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-27 01:04:34 | INFO     | ako_quote | 已加载外部定价配置: E:\AKO_quote_agent\ako_quote_agent\pricing_config.json

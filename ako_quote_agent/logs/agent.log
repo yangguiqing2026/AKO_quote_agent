@@ -39,3 +39,6 @@
 2026-07-15 10:36:35 | INFO     | ako_agent | AKO-Quote-Agent v1.0 启动
 2026-07-15 10:36:35 | INFO     | ako_agent | ==================================================
 2026-07-15 10:36:35 | INFO     | ako_agent | AKO Agent 启动 (ID: 519c04b5)，轮询间隔 10s
+2026-07-26 13:40:43 | INFO     | ako_quote | 已加载外部定价配置: e:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-26 13:45:10 | INFO     | ako_quote | 已加载外部定价配置: e:\AKO_quote_agent\ako_quote_agent\pricing_config.json
+2026-07-26 13:47:33 | INFO     | ako_quote | 已加载外部定价配置: e:\AKO_quote_agent\ako_quote_agent\pricing_config.json

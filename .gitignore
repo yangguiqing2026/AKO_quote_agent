@@ -1,0 +1,41 @@
+# Environment
+.env
+secrets.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg*
+dist/
+build/
+*.spec
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data
+chroma.sqlite3
+chroma.sqlite3-journal
+*.sqlite3-journal
+knowledge_base/vector_store/
+4551cf90-*/
+75b32e54-*/
+be82be14-*/
+daaeadc6-*/
+
+# Output / Temp
+output/
+temp/
+成果文件/
