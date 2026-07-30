@@ -2,15 +2,15 @@ AKO"""
 quote_page.py - 报价计算页
 输入项目名称、墙板类型、面积等参数，点击计算按钮调用 quote_engine。
 """
-from PySide6.QtWidgets import (
+# [ARCHIVED_GUI] from PySide6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QGridLayout,
     QLabel, QLineEdit, QComboBox, QDoubleSpinBox,
     QSpinBox, QGroupBox, QScrollArea, QTableWidget,
     QTableWidgetItem, QHeaderView, QAbstractItemView,
     QFrame, QSizePolicy,
 )
-from PySide6.QtCore import Qt, QThread, Signal
-from PySide6.QtGui import QFont
+# [ARCHIVED_GUI] from PySide6.QtCore import Qt, QThread, Signal
+# [ARCHIVED_GUI] from PySide6.QtGui import QFont
 
 from qfluentwidgets import (
     PushButton, PrimaryPushButton, ComboBox, LineEdit,

@@ -2,11 +2,11 @@
 change_password_dialog.py - 修改密码窗口
 支持：首次强制修改 / 员工自助修改
 """
-from PySide6.QtWidgets import (
+# [ARCHIVED_GUI] from PySide6.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit,
     QPushButton, QSpacerItem,
 )
-from PySide6.QtCore import Qt
+# [ARCHIVED_GUI] from PySide6.QtCore import Qt
 
 try:
     from .ako_style import AKO_COLORS
@@ -182,7 +182,7 @@ class ChangePasswordDialog(QDialog):
             self.msg_label.setStyleSheet(f"color: {AKO_COLORS['success']};")
             self.msg_label.setText("密码修改成功！")
             # Delay accept
-            from PySide6.QtCore import QTimer
+            # [ARCHIVED_GUI] from PySide6.QtCore import QTimer
             QTimer.singleShot(800, self.accept)
         else:
             self._show_error(msg)

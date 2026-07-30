@@ -5,13 +5,13 @@ settings_page.py - 设置页
 import json
 import os
 
-from PySide6.QtWidgets import (
+# [ARCHIVED_GUI] from PySide6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QGridLayout,
     QLabel, QLineEdit, QDoubleSpinBox, QGroupBox,
     QScrollArea, QFrame, QTextEdit, QMessageBox,
 )
-from PySide6.QtCore import Qt, Signal
-from PySide6.QtGui import QFont
+# [ARCHIVED_GUI] from PySide6.QtCore import Qt, Signal
+# [ARCHIVED_GUI] from PySide6.QtGui import QFont
 
 from qfluentwidgets import (
     PushButton, PrimaryPushButton, InfoBar, InfoBarPosition,

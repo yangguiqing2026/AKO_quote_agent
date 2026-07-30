@@ -6,14 +6,14 @@ import json
 import os
 from datetime import datetime
 
-from PySide6.QtWidgets import (
+# [ARCHIVED_GUI] from PySide6.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QTableWidget, QTableWidgetItem,
     QHeaderView, QAbstractItemView, QFrame,
     QMessageBox,
 )
-from PySide6.QtCore import Qt, Signal
-from PySide6.QtGui import QFont
+# [ARCHIVED_GUI] from PySide6.QtCore import Qt, Signal
+# [ARCHIVED_GUI] from PySide6.QtGui import QFont
 
 from qfluentwidgets import (
     PushButton, InfoBar, InfoBarPosition,

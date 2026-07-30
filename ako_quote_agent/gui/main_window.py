@@ -4,13 +4,13 @@ main_window.py - AKO_quote_agent 主窗口
 """
 import os
 
-from PySide6.QtWidgets import (
+# [ARCHIVED_GUI] from PySide6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLabel, QFrame, QStackedWidget, QStatusBar,
     QPushButton, QMenu, QMessageBox,
 )
-from PySide6.QtCore import Qt, Signal, QPropertyAnimation, QEasingCurve, QPoint
-from PySide6.QtGui import QAction, QFont, QIcon, QPixmap
+# [ARCHIVED_GUI] from PySide6.QtCore import Qt, Signal, QPropertyAnimation, QEasingCurve, QPoint
+# [ARCHIVED_GUI] from PySide6.QtGui import QAction, QFont, QIcon, QPixmap
 
 from qfluentwidgets import (
     InfoBar, InfoBarPosition, PushButton,

@@ -437,7 +437,7 @@ class AuthManager:
         if phone and len(phone) >= 4:
             initial_password = "ako" + phone[-4:]
         else:
-            initial_password = "ako123456"
+            # [REMOVED_SECRET] initial_password = "ako123456"
 
         pw_hash = self.hash_password(initial_password)
         now = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
@@ -470,7 +470,7 @@ class AuthManager:
         if phone and len(phone) >= 4:
             new_password = "ako" + phone[-4:]
         else:
-            new_password = "ako123456"
+            # [REMOVED_SECRET] new_password = "ako123456"
 
         pw_hash = self.hash_password(new_password)
         conn.execute(

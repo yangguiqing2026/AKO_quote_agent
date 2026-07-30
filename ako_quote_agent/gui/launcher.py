@@ -8,9 +8,9 @@ import os
 # 确保项目根目录在 path 中
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from PySide6.QtWidgets import QApplication
-from PySide6.QtCore import Qt
-from PySide6.QtGui import QIcon
+# [ARCHIVED_GUI] from PySide6.QtWidgets import QApplication
+# [ARCHIVED_GUI] from PySide6.QtCore import Qt
+# [ARCHIVED_GUI] from PySide6.QtGui import QIcon
 
 try:
     from gui.auth_manager import AuthManager

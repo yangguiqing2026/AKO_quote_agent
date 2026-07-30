@@ -2,13 +2,13 @@
 user_management_dialog.py - 用户管理窗口（仅管理员可见）
 基于账号管理方案 v1.0
 """
-from PySide6.QtWidgets import (
+# [ARCHIVED_GUI] from PySide6.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QGridLayout,
     QLabel, QLineEdit, QPushButton, QComboBox,
     QTableView, QHeaderView, QMessageBox, QAbstractItemView,
 )
-from PySide6.QtGui import QStandardItemModel, QStandardItem
-from PySide6.QtCore import Qt, QTimer
+# [ARCHIVED_GUI] from PySide6.QtGui import QStandardItemModel, QStandardItem
+# [ARCHIVED_GUI] from PySide6.QtCore import Qt, QTimer
 
 try:
     from .ako_style import AKO_COLORS

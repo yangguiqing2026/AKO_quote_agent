@@ -4,12 +4,12 @@ login_dialog.py - AKO 登录弹窗
 """
 import os
 
-from PySide6.QtWidgets import (
+# [ARCHIVED_GUI] from PySide6.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit,
     QCheckBox, QPushButton, QSpacerItem, QSizePolicy,
 )
-from PySide6.QtCore import Qt, QPropertyAnimation, QEasingCurve, QPoint
-from PySide6.QtGui import QPixmap
+# [ARCHIVED_GUI] from PySide6.QtCore import Qt, QPropertyAnimation, QEasingCurve, QPoint
+# [ARCHIVED_GUI] from PySide6.QtGui import QPixmap
 
 from qfluentwidgets import (
     PushButton, PrimaryPushButton, MessageBox,
@@ -279,7 +279,7 @@ class LoginDialog(QDialog):
             }}
         """)
         # 1.5秒后恢复
-        from PySide6.QtCore import QTimer
+        # [ARCHIVED_GUI] from PySide6.QtCore import QTimer
         QTimer.singleShot(1500, self._clear_error_style)
 
     def _clear_error_style(self):
