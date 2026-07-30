@@ -43,7 +43,7 @@ def run_gui(skip_login=False):
     QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
     QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps, True)
 
-    app = QApplication(sys.argv)
+    # [FINAL_FIX] app = QApplication(sys.argv)
     app.setApplicationName("AKO_quote_agent")
     app.setOrganizationName("AKO_studio")
 
@@ -59,7 +59,7 @@ def run_gui(skip_login=False):
         if icon_path:
             main_window.setWindowIcon(QIcon(icon_path))
         main_window.show()
-        return sys.exit(app.exec())
+        # [FINAL_FIX] return sys.exit(app.exec())
 
     auth = AuthManager()
 
@@ -71,7 +71,7 @@ def run_gui(skip_login=False):
         if icon_path:
             main_window.setWindowIcon(QIcon(icon_path))
         main_window.show()
-        return sys.exit(app.exec())
+        # [FINAL_FIX] return sys.exit(app.exec())
 
     # Step 2: 弹出登录窗口
     login_dialog = LoginDialog()
@@ -91,7 +91,7 @@ def run_gui(skip_login=False):
             if icon_path:
                 main_window.setWindowIcon(QIcon(icon_path))
             main_window.show()
-            return sys.exit(app.exec())
+            # [FINAL_FIX] return sys.exit(app.exec())
         else:
             return sys.exit(1)
     else:
