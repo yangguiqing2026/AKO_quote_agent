@@ -122,3 +122,7 @@ D:\AKO_quote_agent\
 | 超时巡检 | 扫描 `status=processing` 且超过 300 秒未完成的任务，自动回退为 `pending` |
 | 断网续传 | 本地 `done` 任务带 `synced: false`，网络恢复后自动 POST PDF 到云端并标记 `synced: true` |
 | 原子写入 | FileLock + os.replace 保证 JSON 文件并发写入安全 |
+
+---
+> 作者：AKO_studio
+> 日期：2026-07-30

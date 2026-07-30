@@ -1,136 +1,133 @@
-# ============================================================
-# AKO_agent_card.yaml — Agent身份证（唯一身份标识）
-# ============================================================
-
-# --- 基础身份 ---
-agent_id: "AKO_quote_agent"
-name: "报价Agent"
-version: "1.0.0"
-owner: "AKO_studio"
-status: "production"
-
-# --- 能力定义 ---
+agent_id: AKO_quote_agent
+name: 报价Agent
+version: 1.0.0
+owner: AKO_studio
+status: production
 capabilities:
-  - id: "cap_quote_calc"
-    name: "报价计算"
-    description: "基于墙板类型、面积、运输距离等参数自动计算报价"
-    input:
-      - name: "project_info"
-        type: "json"
-        required: true
-        description: "项目信息（墙板类型/面积/运输距离/安装复杂度等）"
-    output:
-      - name: "quote_result"
-        type: "json"
-        description: "报价明细"
-    priority: "P0"
-  - id: "cap_quote_pdf"
-    name: "报价PDF生成"
-    description: "根据报价数据生成专业报价单PDF，含AKO品牌模板"
-    input:
-      - name: "quote_data"
-        type: "json"
-        required: true
-        description: "报价数据"
-    output:
-      - name: "pdf_file"
-        type: "file"
-        description: "报价单PDF"
-        format: "pdf"
-    priority: "P1"
-  - id: "cap_login_guard"
-    name: "登录防护"
-    description: "对GUI界面的登录认证进行防护和管理"
-    input:
-      - name: "auth_request"
-        type: "json"
-        required: true
-        description: "登录认证请求"
-    output:
-      - name: "auth_result"
-        type: "json"
-        description: "认证结果"
-    priority: "P1"
-
-# --- 编码架构 ---
-architecture:
-  language: "Python"
-  framework: "PySide6"
-  entry_point: "app.py"
-  config_files:
-    - "config.yaml"
-    - "secrets.env"
-  dependencies:
-    - "requirements.txt"
-    - "AKO_agent_sdk_v2.py"
-  git_repo: ""
-
-# --- 运行态信息 ---
-runtime:
-  endpoint: "http://localhost:5005"
-  heartbeat_interval: 60
-  last_heartbeat: ""
-  status: ""
-  pid: 0
-  start_time: ""
-
-# --- 组织架构归属 ---
-org:
-  department: "商务中心"
-  product_line: "AKO_quote_system"
-  reports_to: "AKO_hub"
-  team: "报价组"
-
-# --- 依赖关系 ---
-dependencies:
-  - agent_id: "AKO_hub"
-    type: "reports_to"
+- id: cap_quote_calc
+  name: 报价计算
+  description: 基于墙板类型、面积、运输距离等参数自动计算报价
+  input:
+  - name: project_info
+    type: json
     required: true
-    description: "任务分发上级"
-  - agent_id: "AKO_layout_agent"
-    type: "calls"
-    required: false
-    description: "联动排版输出报价册"
-
-# --- 文档资产 ---
+    description: 项目信息（墙板类型/面积/运输距离/安装复杂度等）
+  output:
+  - name: quote_result
+    type: json
+    description: 报价明细
+  priority: P0
+- id: cap_quote_pdf
+  name: 报价PDF生成
+  description: 根据报价数据生成专业报价单PDF，含AKO品牌模板
+  input:
+  - name: quote_data
+    type: json
+    required: true
+    description: 报价数据
+  output:
+  - name: pdf_file
+    type: file
+    description: 报价单PDF
+    format: pdf
+  priority: P1
+- id: cap_login_guard
+  name: 登录防护
+  description: 对GUI界面的登录认证进行防护和管理
+  input:
+  - name: auth_request
+    type: json
+    required: true
+    description: 登录认证请求
+  output:
+  - name: auth_result
+    type: json
+    description: 认证结果
+  priority: P1
+architecture:
+  language: Python
+  framework: PySide6
+  entry_point: app.py
+  config_files:
+  - config.yaml
+  - secrets.env
+  dependencies:
+  - requirements.txt
+  - AKO_agent_sdk_v2.py
+  git_repo: ''
+runtime:
+  endpoint: http://localhost:5005
+  heartbeat_interval: 60
+  last_heartbeat: ''
+  status: ''
+  pid: 0
+  start_time: ''
+org:
+  department: 商务中心
+  product_line: AKO_quote_system
+  reports_to: AKO_hub
+  team: 报价组
+dependencies:
+- agent_id: AKO_hub
+  type: reports_to
+  required: true
+  description: 任务分发上级
+- agent_id: AKO_layout_agent
+  type: calls
+  required: false
+  description: 联动排版输出报价册
 metadata:
-  created: "2026-07-25"
-  updated: "2026-07-29"
-  tags: ["技术/AI-Agent", "技术/软件-设计", "工作/决策"]
+  created: '2026-07-25'
+  updated: '2026-07-29'
+  tags:
+  - 技术/AI-Agent
+  - 技术/软件-设计
+  - 工作/决策
   documents:
     whitepaper:
-      filename: "AKO_quote_agent_whitepaper_v1.0.md"
-      path: "./AKO_quote_agent_whitepaper_v1.0.md"
-      version: "1.0.0"
-      status: "production"
-      last_verified: ""
-
-# ============================================================
-# Health探测（强制）
-# ============================================================
+      filename: AKO_quote_agent_whitepaper_v1.0.md
+      path: ./AKO_quote_agent_whitepaper_v1.0.md
+      version: 1.0.0
+      status: production
+      last_verified: ''
 health:
   enabled: true
   probe_interval: 60
   business_probes:
-    - name: "核心功能自检"
-      enabled: true
-      timeout: 30
-    - name: "输入输出通道"
-      enabled: true
-      timeout: 10
-    - name: "依赖服务可用"
-      enabled: true
-      timeout: 5
+  - name: 核心功能自检
+    enabled: true
+    timeout: 30
+  - name: 输入输出通道
+    enabled: true
+    timeout: 10
+  - name: 依赖服务可用
+    enabled: true
+    timeout: 5
   system_probes:
-    - name: "CPU使用率"
-      enabled: true
-      threshold: 80
-    - name: "内存使用率"
-      enabled: true
-      threshold: 80
-    - name: "磁盘空间"
-      enabled: true
-      threshold: 80
-    - name: "网络连通"
-      enabled: true
-      timeout: 5
+  - name: CPU使用率
+    enabled: true
+    threshold: 80
+  - name: 内存使用率
+    enabled: true
+    threshold: 80
+  - name: 磁盘空间
+    enabled: true
+    threshold: 80
+  - name: 网络连通
+    enabled: true
+    timeout: 5
+author: AKO_studio
+tags:
+- business
+- finance
+created_date: '2026-07-30'
+description: Ako Quote Agent Agent for AKO fleet automation.
+interfaces:
+  input: config.yaml / CLI parameters
+  output: Result files / logs
+health_probe:
+  endpoint: /health
+  expected_response: ok
+registry:
+  registry_agent: AKO_registry_agent
+  registered: false

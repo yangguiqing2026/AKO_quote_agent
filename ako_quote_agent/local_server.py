@@ -7,7 +7,7 @@ local_server.py - AKO 报价智能体 Flask HTTP 服务
 import os
 import json
 
-from flask import Flask, request, jsonify
+# [DEPRECATED_GUI] from flask import Flask, request, jsonify
 
 from logger import get_logger
 from local_queue import add_task, get_task, mark_converted
@@ -25,10 +25,10 @@ DATA_DIR = _config["paths"]["data_dir"]
 # 铁律 #2: 启动时自动 makedirs
 os.makedirs(DATA_DIR, exist_ok=True)
 
-app = Flask(__name__)
+# [DEPRECATED_GUI] app = Flask(__name__)
 
 
-@app.route("/submit", methods=["POST"])
+# [DEPRECATED_GUI] @app.route("/submit", methods=["POST"])
 def submit():
     """
     POST /submit - 小程序表单提交入口
@@ -58,7 +58,7 @@ def submit():
     return jsonify({"success": True, "task_id": task_id}), 200
 
 
-@app.route("/status", methods=["GET"])
+# [DEPRECATED_GUI] @app.route("/status", methods=["GET"])
 def status():
     """
     GET /status - 本地调试查询任务状态
@@ -79,7 +79,7 @@ def status():
     return jsonify({"success": True, "task": task}), 200
 
 
-@app.route("/leads/confirmed", methods=["POST"])
+# [DEPRECATED_GUI] @app.route("/leads/confirmed", methods=["POST"])
 def leads_confirmed():
     """
     POST /leads/confirmed - business agent 确认线索入库后回调
@@ -107,7 +107,7 @@ def leads_confirmed():
     return jsonify({"success": True, "task_id": task_id, "status": "converted"}), 200
 
 
-@app.route("/health", methods=["GET"])
+# [DEPRECATED_GUI] @app.route("/health", methods=["GET"])
 def health():
     """健康检查端点"""
     return jsonify({"status": "ok", "service": "AKO-Quote-Agent"}), 200
@@ -120,7 +120,7 @@ if __name__ == "__main__":
     logger.info("AKO 本地 Flask 服务启动中...")
     # 铁律 #3: debug=False 防止 Flask 重载导致文件锁混乱
     # 铁律 #4: 监听 127.0.0.1:5000
-    app.run(
+    # [DEPRECATED_GUI] app.run(
         host=_config["server"]["host"],
         port=_config["server"]["port"],
         debug=_config["server"]["debug"]
