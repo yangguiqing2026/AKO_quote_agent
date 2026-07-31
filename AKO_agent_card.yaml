@@ -46,8 +46,12 @@ capabilities:
   priority: P1
 architecture:
   language: Python
-  framework: PySide6
-  entry_point: app.py
+  framework: Python CLI
+  entry_point: ako_quote_agent/main.py
+  interface_type: cli
+  category:
+  - quote
+  - business
   config_files:
   - config.yaml
   - secrets.env
@@ -121,7 +125,7 @@ tags:
 - business
 - finance
 created_date: '2026-07-30'
-description: Ako Quote Agent Agent for AKO fleet automation.
+description: AKO Quote Agent for AKO fleet automation.
 interfaces:
   input: config.yaml / CLI parameters
   output: Result files / logs
@@ -131,3 +135,7 @@ health_probe:
 registry:
   registry_agent: AKO_registry_agent
   registered: false
+compliance:
+  veto_flags:
+    V5_pyside6_residual: true
+    note: ako_quote_agent/gui/目录残留12个PySide6 GUI文件，需移除
